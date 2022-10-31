@@ -2,4 +2,8 @@ import React from "react";
 import './Button.css'
 
 export default props =>
-    <button className='Button'>{props.label}</button>
+    <button className={`
+        button ${props.operation ? 'operation' : ''}
+    `}>
+        {props.label}
+    </button>
